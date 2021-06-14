@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Stock market analysis & prediction</title>
+      <link rel="stylesheet" href="static/main.css" />
+      <link rel="icon" href="favicon.ico" />
+      <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">  
+    </head>
+    {% block body %} 
+    <body>
+      <div class="top-container">
+        <h1>Stock Market Analysis & Prediction</h1>
+        <h2 class="des">Data Science Mini Project.</h2>   
+      </div>
+        <div class="middle-container"  align="center">
+            <form action="/predict" method="POST">
+                <div>
+                      <label for="ticker">TICKER:</label><br>
+                      <input type="text" id="ticker" name="ticker"><br>
+                <input type="submit" value="Predict">
+            </form>
+                </div>
+        </div>
+      <link rel="stylesheet" href="">
+        </div>
+      </div>
+        <div class="bottom-container">
+          <h3>Contact Us</h3>
+          <a class="footer-link" href="mailto:arnavsriva@gmail.com">Arnav Srivastava</a>
+          <a class="footer-link" href="mailto:kassetty.abhishek@gmail.com">Krishna Kassetty</a>
+          <a class="footer-link" href="mailto:manashpdphukan@gmail.com">Manash Protim Dutta Phukan</a>
+          <a class="footer-link" href="mailto:imdeeps.31@gmail.com">Deeksha Lokesh</a><br>
+          <a class="footer-link" href="https://github.com/arnavsriva/Stock-Market-Analysis">Github</a>
+          <p class="copyright">© 2021.SMPAA</p>
+        </div>
+    </body>
+    </html>
+    {% endblock %}
